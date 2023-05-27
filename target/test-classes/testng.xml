@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PM Application"> 
+	
+	<listeners>
+	<listener
+		class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+	</listeners>
+	
+	
+	
+    <test name="IR Dashboard">
+    <classes>
+      <class name="com.reporting.testcases.HomePageTest">
+      <methods>
+       <include name="verifyInteractiveReportingPageTest" />
+      </methods>
+      </class>
+    </classes>
+  </test>
+</suite> 
+
+

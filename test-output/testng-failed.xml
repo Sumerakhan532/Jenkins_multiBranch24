@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PM Application]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="IR Dashboard(failed)">
+    <classes>
+      <class name="com.reporting.testcases.HomePageTest">
+        <methods>
+          <include name="verifyInteractiveReportingPageTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.reporting.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- IR Dashboard(failed) -->
+</suite> <!-- Failed suite [PM Application] -->
